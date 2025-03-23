@@ -43,5 +43,10 @@ public class ManagerWeekTest {
     public void testGetDayOutOfBounds() {
         managerWeek.getDay(7);
     }
-  
+    @Test
+    public void testContainsDay() {
+        assertThat(managerWeek.containsDay("Tuesday"), is(true));
+        assertThat(managerWeek.containsDay("InvalidDay"), is(false));
+    }
+    
 }
