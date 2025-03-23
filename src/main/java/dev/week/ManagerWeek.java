@@ -18,7 +18,9 @@ public class ManagerWeek {
         daysOfWeek.add("Saturday");
         daysOfWeek.add("Sunday");
     }
-    
+    public List<String> getDaysOfWeek() {
+        return new ArrayList<>(daysOfWeek);
+    }
 
 
    
