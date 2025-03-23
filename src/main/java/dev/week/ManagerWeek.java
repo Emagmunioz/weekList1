@@ -1,5 +1,6 @@
 package dev.week;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ManagerWeek {
@@ -36,5 +37,7 @@ public class ManagerWeek {
     public boolean containsDay(String day) {
         return daysOfWeek.contains(day);
     }
-
+public void sortDaysAlphabetically() {
+        Collections.sort(daysOfWeek);
+    }
 }
