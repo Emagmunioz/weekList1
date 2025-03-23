@@ -27,7 +27,12 @@ public class ManagerWeek {
     public void removeDay(String day) {
         daysOfWeek.remove(day);
     }
-
+    public String getDay(int index) {
+        if (index >= 0 && index < daysOfWeek.size()) {
+            return daysOfWeek.get(index);
+        }
+        throw new IndexOutOfBoundsException("Index is out of bounds");
+    }
    
 
 }
