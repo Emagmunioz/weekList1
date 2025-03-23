@@ -13,10 +13,10 @@ public class ManagerWeekTest {
         managerWeek = new ManagerWeek();
         managerWeek.createDaysOfWeek();
     }
-
-   @Test
+    @Test
     public void testCreateDaysOfWeek() {
         List<String> expectedDays = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         assertThat(managerWeek.getDaysOfWeek(), is(expectedDays));
     }
+  
 }
