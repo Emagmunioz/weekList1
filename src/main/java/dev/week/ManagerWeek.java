@@ -24,7 +24,9 @@ public class ManagerWeek {
     public int getDaysOfWeekSize() {
         return daysOfWeek.size();
     }
-
+    public void removeDay(String day) {
+        daysOfWeek.remove(day);
+    }
 
    
 
