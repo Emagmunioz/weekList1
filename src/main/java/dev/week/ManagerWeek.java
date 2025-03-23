@@ -21,6 +21,9 @@ public class ManagerWeek {
     public List<String> getDaysOfWeek() {
         return new ArrayList<>(daysOfWeek);
     }
+    public int getDaysOfWeekSize() {
+        return daysOfWeek.size();
+    }
 
 
    
