@@ -40,4 +40,7 @@ public class ManagerWeek {
 public void sortDaysAlphabetically() {
         Collections.sort(daysOfWeek);
     }
+    public void clearDaysOfWeek() {
+        daysOfWeek.clear();
+    }
 }
