@@ -18,5 +18,11 @@ public class ManagerWeekTest {
         List<String> expectedDays = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
         assertThat(managerWeek.getDaysOfWeek(), is(expectedDays));
     }
+    @Test
+    public void testGetDaysOfWeek() {
+        List<String> days = managerWeek.getDaysOfWeek();
+        assertThat(days, hasSize(7));
+        assertThat(days, hasItems("Monday", "Sunday"));
+    }
   
 }
