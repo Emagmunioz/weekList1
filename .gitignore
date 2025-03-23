@@ -1,0 +1,34 @@
+# Ignorar la carpeta target (generada por Maven)
+target/
+
+# Ignorar archivos de configuración de IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+dist/
+out/
+
+# Ignorar archivos de logs y temporales
+*.log
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Ignorar archivos de cobertura de JaCoCo
+*.exec
+
+# Ignorar archivos de configuración de Maven
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
