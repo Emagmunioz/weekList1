@@ -48,5 +48,11 @@ public class ManagerWeekTest {
         assertThat(managerWeek.containsDay("Tuesday"), is(true));
         assertThat(managerWeek.containsDay("InvalidDay"), is(false));
     }
+    @Test
+    public void testSortDaysAlphabetically() {
+        managerWeek.sortDaysAlphabetically();
+        List<String> sortedDays = Arrays.asList("Friday", "Monday", "Saturday", "Sunday", "Thursday", "Tuesday", "Wednesday");
+        assertThat(managerWeek.getDaysOfWeek(), is(sortedDays));
+    }
     
 }
