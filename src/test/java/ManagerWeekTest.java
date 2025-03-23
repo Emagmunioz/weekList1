@@ -34,5 +34,10 @@ public class ManagerWeekTest {
         assertThat(managerWeek.getDaysOfWeek(), not(hasItem("Monday")));
         assertThat(managerWeek.getDaysOfWeekSize(), is(6));
     }
+    @Test
+    public void testGetDay() {
+        assertThat(managerWeek.getDay(0), is("Monday"));
+        assertThat(managerWeek.getDay(6), is("Sunday"));
+    }
   
 }
