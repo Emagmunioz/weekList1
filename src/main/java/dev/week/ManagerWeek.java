@@ -33,6 +33,8 @@ public class ManagerWeek {
         }
         throw new IndexOutOfBoundsException("Index is out of bounds");
     }
-   
+    public boolean containsDay(String day) {
+        return daysOfWeek.contains(day);
+    }
 
 }
