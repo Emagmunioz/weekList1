@@ -54,5 +54,10 @@ public class ManagerWeekTest {
         List<String> sortedDays = Arrays.asList("Friday", "Monday", "Saturday", "Sunday", "Thursday", "Tuesday", "Wednesday");
         assertThat(managerWeek.getDaysOfWeek(), is(sortedDays));
     }
+    @Test
+    public void testClearDaysOfWeek() {
+        managerWeek.clearDaysOfWeek();
+        assertThat(managerWeek.getDaysOfWeekSize(), is(0));
+    }
     
 }
