@@ -24,5 +24,9 @@ public class ManagerWeekTest {
         assertThat(days, hasSize(7));
         assertThat(days, hasItems("Monday", "Sunday"));
     }
+    @Test
+    public void testGetDaysOfWeekSize() {
+        assertThat(managerWeek.getDaysOfWeekSize(), is(7));
+    }
   
 }
