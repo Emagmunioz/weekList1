@@ -28,5 +28,11 @@ public class ManagerWeekTest {
     public void testGetDaysOfWeekSize() {
         assertThat(managerWeek.getDaysOfWeekSize(), is(7));
     }
+    @Test
+    public void testRemoveDay() {
+        managerWeek.removeDay("Monday");
+        assertThat(managerWeek.getDaysOfWeek(), not(hasItem("Monday")));
+        assertThat(managerWeek.getDaysOfWeekSize(), is(6));
+    }
   
 }
