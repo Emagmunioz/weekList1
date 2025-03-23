@@ -39,5 +39,9 @@ public class ManagerWeekTest {
         assertThat(managerWeek.getDay(0), is("Monday"));
         assertThat(managerWeek.getDay(6), is("Sunday"));
     }
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void testGetDayOutOfBounds() {
+        managerWeek.getDay(7);
+    }
   
 }
