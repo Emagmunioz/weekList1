@@ -57,5 +57,14 @@ public class semanaTest {
         List<String> dias = gestor.obtenerDiasSemana();
         assertThat(dias, contains("Domingo", "Jueves", "Lunes", "Miercoles", "Martes", "Sabado", "Viernes"));
     }
+    @Test
+    public void testVaciarLista() {
+        
+        gestor.vaciarLista();
+        assertThat(gestor.testObtenerLargoLista(),is(0));
+        assertThat(gestor.obtenerDiasSemana(),is (empty())); 
+
+        
+    }
 
     }
