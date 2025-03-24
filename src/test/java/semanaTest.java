@@ -19,4 +19,5 @@ public class semanaTest {
         assertThat(dias, containsInAnyOrder("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"));
 
     }
+    
     }
