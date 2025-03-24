@@ -23,6 +23,7 @@ public class Semana {
     }
     public int testObtenerLargoLista() {
         return this.diasSemana.size();
+    }
 
     public boolean eliminarDia(String dia) {
         return this.diasSemana.remove(dia); 
@@ -35,9 +36,10 @@ public class Semana {
     }
     public void ordenarDiasAlfabeticamente() {
         Collections.sort(this.diasSemana);
-    
-
-
+    }
+    public void vaciarLista() {
+        this.diasSemana.clear();
+    }    
 
     }
 
