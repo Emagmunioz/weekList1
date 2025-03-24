@@ -33,7 +33,8 @@ public class Semana {
     public boolean existeDia(String dia) {
         return this.diasSemana.contains(dia);
     }
-    
+    public void ordenarDiasAlfabeticamente() {
+        Collections.sort(this.diasSemana);
     
 
 
