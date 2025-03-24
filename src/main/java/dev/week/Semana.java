@@ -21,6 +21,8 @@ public class Semana {
     public List<String> obtenerDiasSemana() {
         return this.diasSemana;
     }
+    public int testObtenerLargoLista() {
+        return this.diasSemana.size();
 
     
 
