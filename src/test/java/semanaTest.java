@@ -36,5 +36,12 @@ public class semanaTest {
         assertThat(gestor.testObtenerLargoLista(), is(6));
         assertThat(gestor.obtenerDiasSemana(), not(hasItem("Lunes")));
     }
-    
+    @Test
+    public void testObtenerDiaPorIndice() {
+        
+        assertThat(gestor.obtenerDiaPorIndice(0), is("Lunes"));
+        assertThat(gestor.obtenerDiaPorIndice(6), is("Domingo"));
+        assertNull(gestor.obtenerDiaPorIndice(7));
+    }
+
     }
