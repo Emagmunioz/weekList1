@@ -18,10 +18,8 @@ public class Semana {
         this.diasSemana.add("Sabado");
         this.diasSemana.add("Domingo");
     }
-    public List<String> obtenerDiasSemana() {
-        return this.diasSemana;
-    }
     
+
     
 
 
