@@ -29,6 +29,11 @@ public class Semana {
     }    
     public String obtenerDiaPorIndice(int indice) {
         return this.diasSemana.get(indice);
+    }
+    public boolean existeDia(String dia) {
+        return this.diasSemana.contains(dia);
+    }
+    
     
 
 
