@@ -3,7 +3,10 @@ Este proyecto es una aplicación simple en Java que gestiona los días de la sem
 
 
 Cobertura
-![image](https://github.com/user-attachments/assets/beeaf49e-1bfc-4cc8-a7f8-bb3fa36f57d0)
+
+![image](https://github.com/user-attachments/assets/19acd974-af71-44b4-8f8e-3cf59cdbbd66)
+
+
 
 Requisitos
 Java 17 o superior.
