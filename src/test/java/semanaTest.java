@@ -12,5 +12,11 @@ public class semanaTest {
         gestor = new Semana();
         gestor.crearListaDias();
     }
+    @Test
+    public void testCrearListaDias() {
+        List<String> dias = gestor.obtenerDiasSemana();
+        assertThat(dias, hasSize(7));
+        assertThat(dias, containsInAnyOrder("Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"));
 
-}
+    }
+    }
