@@ -1,4 +1,5 @@
-Week Manager
+Semana
+
 Este proyecto es una aplicación simple en Java que gestiona los días de la semana. Proporciona métodos para crear, obtener, eliminar y ordenar los días de la semana, entre otras funcionalidades.
 
 
