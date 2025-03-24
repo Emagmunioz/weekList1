@@ -27,7 +27,8 @@ public class Semana {
     public boolean eliminarDia(String dia) {
         return this.diasSemana.remove(dia); 
     }    
-
+    public String obtenerDiaPorIndice(int indice) {
+        return this.diasSemana.get(indice);
     
 
 
