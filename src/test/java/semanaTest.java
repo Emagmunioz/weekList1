@@ -29,4 +29,11 @@ public class semanaTest {
     public void testObtenerLargoLista() {
         assertThat(gestor.testObtenerLargoLista(), is(7));
     }
+    @Test
+    public void testEliminarDia() {
+        
+        assertThat(gestor.eliminarDia("Lunes"), is(true));
+        assertThat(gestor.testObtenerLargoLista(), is(6));
+        assertThat(gestor.obtenerDiasSemana(), not(hasItem("Lunes")));
+    }
     }
