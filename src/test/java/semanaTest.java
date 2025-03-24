@@ -25,5 +25,8 @@ public class semanaTest {
         assertThat(dias, is(not(empty())));
         assertThat(dias, hasSize(7));
     }
-
+    @Test
+    public void testObtenerLargoLista() {
+        assertThat(gestor.testObtenerLargoLista(), is(7));
+    }
     }
