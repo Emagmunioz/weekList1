@@ -36,4 +36,5 @@ public class semanaTest {
         assertThat(gestor.testObtenerLargoLista(), is(6));
         assertThat(gestor.obtenerDiasSemana(), not(hasItem("Lunes")));
     }
+    
     }
