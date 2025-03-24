@@ -24,6 +24,10 @@ public class Semana {
     public int testObtenerLargoLista() {
         return this.diasSemana.size();
 
+    public boolean eliminarDia(String dia) {
+        return this.diasSemana.remove(dia); 
+    }    
+
     
 
 
