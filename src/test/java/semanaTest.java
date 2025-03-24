@@ -50,5 +50,12 @@ public class semanaTest {
         assertThat(gestor.existeDia("Martes"), is(true));
         assertThat(gestor.existeDia("Feriado"), is(false)); 
     }
+    @Test
+    public void testOrdenarDiasAlfabeticamente() {
+        
+        gestor.ordenarDiasAlfabeticamente();
+        List<String> dias = gestor.obtenerDiasSemana();
+        assertThat(dias, contains("Domingo", "Jueves", "Lunes", "Miercoles", "Martes", "Sabado", "Viernes"));
+    }
 
     }
